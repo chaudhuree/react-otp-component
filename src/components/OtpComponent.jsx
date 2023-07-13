@@ -6,6 +6,11 @@ const OtpComponent = () => {
   const [otp, setOtp] = useState(null);
   const inputRefs = useRef([]);
 
+  // let length = 4; // this can be passed as props
+  // let otpLength = Array.from({ length: length }, () => "");
+  // console.log(otpLength);
+  // const [inputValues, setInputValues] = useState(otpLength);
+
   useEffect(() => {
     if (inputRefs.current[0]) {
       inputRefs.current[0].focus();
